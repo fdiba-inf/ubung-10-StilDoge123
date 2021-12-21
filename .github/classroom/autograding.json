@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Ellipse 1 2 3 4",
+      "setup": "cd src && javac exercise10/Utils.java exercise10/Point.java exercise10/PointDemo.java exercise10/ClickListener.java exercise10/Figure.java exercise10/Rectangle.java exercise10/RectangleDemo.java exercise10/Ellipse.java exercise10/EllipseDemo.java exercise10/ClickDemo.java",
+      "run": "cd src && java -ea exercise10.EllipseDemo",
+      "input": "1 2 3 4",
+      "output": "1. Ellipse: (0.0, 0.0)-[1.0, 1.0], Circle, P=6.283185307179586, A=3.141592653589793\r\n2. Ellipse: (2.0, 3.0)-[5.0, 6.0], Ellipse, P=34.628955940751425, A=94.24777960769379\r\n3. Ellipse: (2.0, 3.0)-[5.0, 6.0], Ellipse, P=34.628955940751425, A=94.24777960769379\r\n4. Ellipse: (1.0, 2.0)-[3.0, 4.0], Ellipse, P=22.103491790916742, A=37.69911184307752\r\n2. equals 1.: false\r\n2. equals 3.: true",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "Ellipse 5 6 7 8",
+      "setup": "cd src && javac exercise10/Utils.java exercise10/Point.java exercise10/PointDemo.java exercise10/ClickListener.java exercise10/Figure.java exercise10/Rectangle.java exercise10/RectangleDemo.java exercise10/Ellipse.java exercise10/EllipseDemo.java exercise10/ClickDemo.java",
+      "run": "cd src && java -ea exercise10.EllipseDemo",
+      "input": "5 6 7 8",
+      "output": "1. Ellipse: (0.0, 0.0)-[1.0, 1.0], Circle, P=6.283185307179586, A=3.141592653589793\r\n2. Ellipse: (2.0, 3.0)-[5.0, 6.0], Ellipse, P=34.628955940751425, A=94.24777960769379\r\n3. Ellipse: (2.0, 3.0)-[5.0, 6.0], Ellipse, P=34.628955940751425, A=94.24777960769379\r\n4. Ellipse: (5.0, 6.0)-[7.0, 8.0], Ellipse, P=47.176264233903005, A=175.92918860102841\r\n2. equals 1.: false\r\n2. equals 3.: true",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "Click 1 1 4 5 1 1 2 3 2 2",
+      "setup": "cd src && javac exercise10/Utils.java exercise10/Point.java exercise10/PointDemo.java exercise10/ClickListener.java exercise10/Figure.java exercise10/Rectangle.java exercise10/RectangleDemo.java exercise10/Ellipse.java exercise10/EllipseDemo.java exercise10/ClickDemo.java",
+      "run": "cd src && java -ea exercise10.ClickDemo",
+      "input": "1 1 4 5 1 1 2 3 2 2",
+      "output": "ClickListener 0 contains click point: true\r\nClickListener 1 contains click point: true",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "Click 1 1 4 5 1 1 2 3 10 10",
+      "setup": "cd src && javac exercise10/Utils.java exercise10/Point.java exercise10/PointDemo.java exercise10/ClickListener.java exercise10/Figure.java exercise10/Rectangle.java exercise10/RectangleDemo.java exercise10/Ellipse.java exercise10/EllipseDemo.java exercise10/ClickDemo.java",
+      "run": "cd src && java -ea exercise10.ClickDemo",
+      "input": "1 1 4 5 1 1 2 3 10 10",
+      "output": "ClickListener 0 contains click point: false\r\nClickListener 1 contains click point: false",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    }
+  ]
+}
