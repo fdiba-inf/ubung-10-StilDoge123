@@ -2,6 +2,7 @@ package exercise10;
 
 public class Rectangle extends Figure {
     public Rectangle() {
+
         super(new Point(0, 0), 1, 1);
     }
 
@@ -39,7 +40,15 @@ public class Rectangle extends Figure {
 
     @Override
     public boolean containsClick(Point click) {
-        // Check if click point is inside the rectangle
-        return false;
+        double clickX = click.getX();
+        double clickY = click.getY();
+
+        double startX = startPoint.getX();
+        double startY = startPoint.getY();
+
+        boolean xInside = clickX > startX && clickX < (startX + side1);
+        boolean yInside = clickY > startY && clickY < (startY + side2);
+
+        return xInside && yInside;
     }
 }
