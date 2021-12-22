@@ -33,7 +33,7 @@ public abstract class Figure implements ClickListener {
     }
 
     public boolean isValid() {
-        return side1 > 0 && side2 > 0;
+        return side1 > 0 && side2> 0;
     }
 
     public boolean equal(Figure otherFigure) {

@@ -2,7 +2,6 @@ package exercise10;
 
 public class Rectangle extends Figure {
     public Rectangle() {
-
         super(new Point(0, 0), 1, 1);
     }
 
